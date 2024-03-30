@@ -5,13 +5,13 @@ binLR = function(formula,
   
   if (is.null(wt)) {
     
-    model <- glm(formula = formula,
+    model = glm(formula = formula,
                  data = data,
                  family = "binomial")
     
   } else {
     
-    model <- glm(formula = formula,
+    model = glm(formula = formula,
                  data = data,
                  family = "binomial",
                  weights = wt)
